@@ -14,7 +14,7 @@ RUN \
     && cd /usr/src/app \
     && rm -rf dongzhi; true \
     && git clone https://github.com/dongzhi/dongzhi.git \
-    && cd dongzhixia \
+    && cd dongzhi \
     && npm install \
     && node app.js
 
