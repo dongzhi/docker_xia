@@ -24,8 +24,8 @@ RUN \
     && npm install
 
 # set the working directory
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/dongzhi
 
 EXPOSE 8888
 
-CMD ["node", "/usr/src/app/app.js"]
+CMD ["node", "app.js"]
