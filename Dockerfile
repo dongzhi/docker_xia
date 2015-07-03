@@ -25,6 +25,7 @@ RUN \
 
 # set the working directory
 WORKDIR /usr/src/app/dongzhi
+VOLUME /usr/src/app/dongzhi
 
 EXPOSE 8888
 
