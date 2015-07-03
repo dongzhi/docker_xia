@@ -10,7 +10,7 @@ MAINTAINER Dongzhi Xia <xiatwo@gmail.com>
 # install git
 RUN apt-get update && \
     apt-get install -y git git-core && \
-    apt-get install -y python build-essential nodejs
+    apt-get install -y nodejs
 
 # clone project and run
 RUN \
