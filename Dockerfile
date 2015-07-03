@@ -2,11 +2,15 @@
 # Dockerfile for building my personal website
 #
 
-FROM node:latest
+# Set the base image to Ubuntu
+FROM    ubuntu
+
 MAINTAINER Dongzhi Xia <xiatwo@gmail.com>
 
 # install git
-RUN apt-get update && apt-get install -y git git-core
+RUN apt-get update && \
+    apt-get install -y git git-core && \
+    apt-get install -y python build-essential nodejs
 
 # clone project and run
 RUN \
