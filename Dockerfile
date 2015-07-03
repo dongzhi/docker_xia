@@ -19,7 +19,7 @@ RUN \
     mkdir -p /usr/src/app \
     && cd /usr/src/app \
     && rm -rf dongzhi; true \
-    && git clone https://github.com/dongzhi/dongzhi.git \
+    && git clone -b gh-pages https://github.com/dongzhi/dongzhi.git \
     && cd dongzhi \
     && npm install \
     && node app.js
