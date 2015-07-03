@@ -21,11 +21,10 @@ RUN \
     && rm -rf dongzhi; true \
     && git clone -b gh-pages https://github.com/dongzhi/dongzhi.git \
     && cd dongzhi \
-    && npm install
+    && npm install \
+    && node app.js
 
 # set the working directory
 WORKDIR /usr/src/app
 
 EXPOSE 8888
-
-CMD ["node", "app.js"]
